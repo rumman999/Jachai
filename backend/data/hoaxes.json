@@ -1,0 +1,407 @@
+[
+  {
+    "id": "padma-bridge-heads",
+    "category": "rumour-violence",
+    "claim_en": "Padma Bridge construction needs human heads, so child kidnappers are collecting heads",
+    "claim_bn": "পদ্মা সেতু নির্মাণে মানুষের মাথা লাগবে, তাই ছেলেধরারা শিশুদের মাথা সংগ্রহ করছে",
+    "aliases": ["padma bridge needs human heads", "পদ্মা সেতুতে মাথা লাগবে", "পদ্মা সেতুর জন্য মানুষের কাটা মাথা"],
+    "fact_en": "Police and the bridge authority called this a baseless rumour. In 2019 it led to mob beatings of innocent people.",
+    "fact_bn": "পুলিশ ও সেতু কর্তৃপক্ষ একে ভিত্তিহীন গুজব বলেছে। ২০১৯ সালে এই গুজবে নিরপরাধ মানুষকে গণপিটুনি দেওয়া হয়েছিল।"
+  },
+  {
+    "id": "child-kidnapper-gang",
+    "category": "rumour-violence",
+    "claim_en": "A child kidnapping gang is roaming the area disguised as beggars, keep children indoors",
+    "claim_bn": "এলাকায় ভিক্ষুকের ছদ্মবেশে ছেলেধরা চক্র ঘুরছে, শিশুদের ঘরে রাখুন",
+    "aliases": ["ছেলেধরা চক্র এলাকায় ঘুরছে", "child kidnappers disguised as beggars"],
+    "fact_en": "Police have repeatedly warned that forwarded 'chheledhora' alerts are rumours; acting on them has led to innocent people being lynched. If you suspect something, call 999.",
+    "fact_bn": "পুলিশ বারবার সতর্ক করেছে যে এ ধরনের 'ছেলেধরা' বার্তা গুজব; এর জেরে নিরপরাধ মানুষ গণপিটুনির শিকার হয়েছেন। সন্দেহ হলে ৯৯৯-এ ফোন করুন।"
+  },
+  {
+    "id": "salt-shortage",
+    "category": "market",
+    "claim_en": "There is a salt shortage, salt will cost 200 taka per kg, buy and stock up now",
+    "claim_bn": "দেশে লবণের সংকট, লবণের কেজি ২০০ টাকা হবে, এখনই কিনে মজুত করুন",
+    "aliases": ["লবণের দাম বেড়ে যাবে এখনই কিনুন", "salt price will rise stock up now"],
+    "fact_en": "In November 2019 this rumour caused panic buying; the government confirmed the country had ample salt stock.",
+    "fact_bn": "২০১৯ সালের নভেম্বরে এই গুজবে লবণ কেনার হিড়িক পড়ে; সরকার জানায় দেশে পর্যাপ্ত লবণ মজুত আছে।"
+  },
+  {
+    "id": "thankuni-corona",
+    "category": "health-covid",
+    "claim_en": "Eating thankuni (Centella) leaves cures or prevents coronavirus",
+    "claim_bn": "থানকুনি পাতা খেলে করোনাভাইরাস ভালো হয় বা করোনা হয় না",
+    "aliases": ["থানকুনি পাতা খেলে করোনা হবে না", "thankuni leaves cure corona"],
+    "fact_en": "There is no scientific evidence that thankuni leaves prevent or cure COVID-19.",
+    "fact_bn": "থানকুনি পাতা কোভিড-১৯ প্রতিরোধ বা নিরাময় করে — এমন কোনো বৈজ্ঞানিক প্রমাণ নেই।"
+  },
+  {
+    "id": "hot-water-corona",
+    "category": "health-covid",
+    "claim_en": "Drinking hot water or gargling with salt water kills the coronavirus",
+    "claim_bn": "গরম পানি পান করলে বা লবণ পানি দিয়ে গার্গল করলে করোনাভাইরাস মরে যায়",
+    "aliases": ["গরম পানি খেলে করোনা মরে যায়", "hot water kills coronavirus"],
+    "fact_en": "There is no evidence that hot water or salt-water gargles kill the coronavirus or prevent infection. WHO has debunked similar claims.",
+    "fact_bn": "গরম পানি বা লবণ পানির গার্গল করোনাভাইরাস মারে বা সংক্রমণ ঠেকায় — এমন কোনো প্রমাণ নেই। বিশ্ব স্বাস্থ্য সংস্থা এ ধরনের দাবি খণ্ডন করেছে।"
+  },
+  {
+    "id": "5g-corona",
+    "category": "health-covid",
+    "claim_en": "5G mobile networks spread the coronavirus",
+    "claim_bn": "৫জি মোবাইল নেটওয়ার্কের মাধ্যমে করোনাভাইরাস ছড়ায়",
+    "aliases": ["5g towers spread corona", "৫জি টাওয়ার থেকে করোনা ছড়ায়"],
+    "fact_en": "WHO: viruses cannot travel on radio waves or mobile networks. COVID-19 also spread in countries with no 5G.",
+    "fact_bn": "বিশ্ব স্বাস্থ্য সংস্থা জানিয়েছে, ভাইরাস রেডিও তরঙ্গ বা মোবাইল নেটওয়ার্কে ছড়ায় না। ৫জি নেই এমন দেশেও কোভিড-১৯ ছড়িয়েছে।"
+  },
+  {
+    "id": "vaccine-microchip",
+    "category": "health-vaccine",
+    "claim_en": "COVID-19 vaccines contain a microchip to track people",
+    "claim_bn": "করোনার টিকার মধ্যে মানুষকে নজরদারি করার জন্য মাইক্রোচিপ আছে",
+    "aliases": ["টিকায় মাইক্রোচিপ আছে", "vaccine has tracking microchip"],
+    "fact_en": "Vaccine ingredient lists are public and contain no microchips or tracking devices.",
+    "fact_bn": "টিকার উপাদানের তালিকা প্রকাশ্য; কোনো টিকায় মাইক্রোচিপ বা নজরদারির যন্ত্র নেই।"
+  },
+  {
+    "id": "vaccine-infertility",
+    "category": "health-vaccine",
+    "claim_en": "COVID-19 vaccines cause infertility",
+    "claim_bn": "করোনার টিকা নিলে সন্তান জন্মদানের ক্ষমতা নষ্ট হয়ে যায়",
+    "aliases": ["টিকা নিলে বন্ধ্যা হয়ে যায়", "corona vaccine makes you infertile"],
+    "fact_en": "Large studies have found no link between COVID-19 vaccines and infertility in women or men.",
+    "fact_bn": "বড় পরিসরের গবেষণায় করোনার টিকার সাথে নারী বা পুরুষের বন্ধ্যাত্বের কোনো সম্পর্ক পাওয়া যায়নি।"
+  },
+  {
+    "id": "vaccine-dna",
+    "category": "health-vaccine",
+    "claim_en": "COVID-19 vaccines change your DNA",
+    "claim_bn": "করোনার টিকা মানুষের ডিএনএ পরিবর্তন করে দেয়",
+    "aliases": ["টিকা ডিএনএ বদলে দেয়", "mrna vaccine alters dna"],
+    "fact_en": "COVID-19 vaccines do not enter the cell nucleus where DNA is kept and cannot change your genes.",
+    "fact_bn": "করোনার টিকা কোষের যে নিউক্লিয়াসে ডিএনএ থাকে সেখানে প্রবেশ করে না, তাই জিন পরিবর্তন করতে পারে না।"
+  },
+  {
+    "id": "garlic-corona",
+    "category": "health-covid",
+    "claim_en": "Eating garlic protects you from coronavirus",
+    "claim_bn": "রসুন খেলে করোনাভাইরাস থেকে রক্ষা পাওয়া যায়",
+    "aliases": ["রসুন খেলে করোনা হয় না", "garlic prevents corona"],
+    "fact_en": "WHO: garlic is healthy, but there is no evidence it protects against COVID-19.",
+    "fact_bn": "বিশ্ব স্বাস্থ্য সংস্থা বলেছে, রসুন স্বাস্থ্যকর হলেও তা কোভিড-১৯ থেকে রক্ষা করে — এমন প্রমাণ নেই।"
+  },
+  {
+    "id": "heat-kills-corona",
+    "category": "health-covid",
+    "claim_en": "Coronavirus cannot survive in hot weather above 26 degrees, so it will not spread in Bangladesh",
+    "claim_bn": "২৬ ডিগ্রির বেশি গরমে করোনাভাইরাস বাঁচে না, তাই বাংলাদেশে করোনা ছড়াবে না",
+    "aliases": ["গরমে করোনা মরে যায়", "corona dies in hot weather"],
+    "fact_en": "WHO: COVID-19 spreads in all climates, including hot and humid ones. Bangladesh itself had large outbreaks.",
+    "fact_bn": "বিশ্ব স্বাস্থ্য সংস্থা জানিয়েছে, গরম ও আর্দ্র আবহাওয়াসহ সব আবহাওয়াতেই কোভিড-১৯ ছড়ায়। বাংলাদেশেও ব্যাপক সংক্রমণ হয়েছে।"
+  },
+  {
+    "id": "kalojira-corona",
+    "category": "health-covid",
+    "claim_en": "Black seed (kalojira) cures coronavirus",
+    "claim_bn": "কালোজিরা খেলে করোনাভাইরাস ভালো হয়ে যায়",
+    "aliases": ["কালোজিরা করোনার ওষুধ", "black seed cures covid"],
+    "fact_en": "No clinical trial has shown that black seed cures or prevents COVID-19.",
+    "fact_bn": "কালোজিরা কোভিড-১৯ নিরাময় বা প্রতিরোধ করে — কোনো ক্লিনিক্যাল পরীক্ষায় এমন প্রমাণ মেলেনি।"
+  },
+  {
+    "id": "alcohol-corona",
+    "category": "health-covid",
+    "claim_en": "Drinking alcohol kills the coronavirus in your body",
+    "claim_bn": "মদ বা অ্যালকোহল পান করলে শরীরের করোনাভাইরাস মরে যায়",
+    "aliases": ["অ্যালকোহল খেলে করোনা মরে", "alcohol kills corona in body"],
+    "fact_en": "WHO: drinking alcohol does not protect against COVID-19. People have died drinking toxic methanol because of this rumour.",
+    "fact_bn": "বিশ্ব স্বাস্থ্য সংস্থা জানিয়েছে, অ্যালকোহল পান কোভিড-১৯ থেকে রক্ষা করে না। এই গুজবে বিষাক্ত মিথানল পান করে মানুষ মারা গেছে।"
+  },
+  {
+    "id": "broiler-chicken-corona",
+    "category": "health-covid",
+    "claim_en": "Eating broiler chicken spreads coronavirus",
+    "claim_bn": "ব্রয়লার মুরগি খেলে করোনাভাইরাস ছড়ায়",
+    "aliases": ["মুরগির মাংস থেকে করোনা", "chicken meat spreads coronavirus"],
+    "fact_en": "There is no evidence that COVID-19 spreads through properly cooked meat or poultry.",
+    "fact_bn": "ভালোভাবে রান্না করা মাংস বা মুরগি থেকে কোভিড-১৯ ছড়ায় — এমন কোনো প্রমাণ নেই।"
+  },
+  {
+    "id": "mosquito-corona",
+    "category": "health-covid",
+    "claim_en": "Coronavirus is spread by mosquito bites",
+    "claim_bn": "মশার কামড়ে করোনাভাইরাস ছড়ায়",
+    "aliases": ["মশা থেকে করোনা ছড়ায়", "mosquitoes transmit covid"],
+    "fact_en": "WHO: there is no evidence that mosquitoes transmit the coronavirus. It spreads mainly through respiratory droplets.",
+    "fact_bn": "বিশ্ব স্বাস্থ্য সংস্থা জানিয়েছে, মশার মাধ্যমে করোনাভাইরাস ছড়ানোর কোনো প্রমাণ নেই। এটি মূলত হাঁচি-কাশির কণার মাধ্যমে ছড়ায়।"
+  },
+  {
+    "id": "breath-hold-test",
+    "category": "health-covid",
+    "claim_en": "If you can hold your breath for 10 seconds without coughing, you do not have coronavirus",
+    "claim_bn": "১০ সেকেন্ড দম ধরে রাখতে পারলে বুঝবেন আপনার করোনা হয়নি",
+    "aliases": ["দম ধরে রেখে করোনা পরীক্ষা", "hold breath 10 seconds corona test"],
+    "fact_en": "WHO: holding your breath is not a test for COVID-19. Only a laboratory test can confirm infection.",
+    "fact_bn": "বিশ্ব স্বাস্থ্য সংস্থা জানিয়েছে, দম ধরে রাখা করোনা পরীক্ষার কোনো উপায় নয়। শুধু ল্যাবরেটরি পরীক্ষাই সংক্রমণ নিশ্চিত করতে পারে।"
+  },
+  {
+    "id": "papaya-dengue",
+    "category": "health",
+    "claim_en": "Papaya leaf juice cures dengue, there is no need to go to hospital",
+    "claim_bn": "পেঁপে পাতার রস খেলেই ডেঙ্গু ভালো হয়, হাসপাতালে যাওয়ার দরকার নেই",
+    "aliases": ["পেঁপে পাতার রসে ডেঙ্গু ভালো হয়", "papaya leaf juice cures dengue"],
+    "fact_en": "No home remedy cures dengue. Doctors advise medical care because severe dengue can be fatal without treatment.",
+    "fact_bn": "কোনো ঘরোয়া টোটকা ডেঙ্গু সারায় না। গুরুতর ডেঙ্গুতে চিকিৎসা ছাড়া মৃত্যু হতে পারে, তাই চিকিৎসকের পরামর্শ নিন।"
+  },
+  {
+    "id": "vitamin-a-deaths",
+    "category": "health-vaccine",
+    "claim_en": "Children are dying after taking the Vitamin A capsule from the national campaign",
+    "claim_bn": "জাতীয় ক্যাম্পেইনের ভিটামিন এ ক্যাপসুল খেয়ে শিশুরা মারা যাচ্ছে",
+    "aliases": ["ভিটামিন এ ক্যাপসুল খেয়ে শিশু মৃত্যু", "vitamin a capsule killing children"],
+    "fact_en": "Vitamin A capsules have been given safely to millions of Bangladeshi children for decades. If a child feels unwell, consult a health worker.",
+    "fact_bn": "কয়েক দশক ধরে কোটি কোটি শিশুকে নিরাপদে ভিটামিন এ ক্যাপসুল খাওয়ানো হচ্ছে। শিশু অসুস্থ বোধ করলে স্বাস্থ্যকর্মীর পরামর্শ নিন।"
+  },
+  {
+    "id": "hiv-blood-drinks",
+    "category": "health",
+    "claim_en": "HIV-infected blood has been mixed into a soft drink brand, do not drink it",
+    "claim_bn": "একটি কোমল পানীয়তে এইচআইভি আক্রান্ত রক্ত মেশানো হয়েছে, কেউ পান করবেন না",
+    "aliases": ["কোমল পানীয়তে এইচআইভি রক্ত", "hiv blood mixed in soft drink"],
+    "fact_en": "A recycled hoax. HIV cannot survive in drinks and is not transmitted by eating or drinking.",
+    "fact_bn": "এটি পুরোনো একটি গুজব। এইচআইভি পানীয়তে বাঁচে না এবং খাওয়া বা পান করার মাধ্যমে ছড়ায় না।"
+  },
+  {
+    "id": "hiv-needles-seats",
+    "category": "health",
+    "claim_en": "HIV-infected needles are being left on bus and cinema seats",
+    "claim_bn": "বাস ও সিনেমা হলের সিটে এইচআইভি আক্রান্ত সুচ রেখে দেওয়া হচ্ছে",
+    "aliases": ["সিটে এইচআইভি সুচ", "hiv needles on cinema seats"],
+    "fact_en": "A decades-old chain-message hoax. No such cases have been confirmed.",
+    "fact_bn": "কয়েক দশকের পুরোনো চেইন-মেসেজ গুজব। এমন কোনো ঘটনা নিশ্চিত হয়নি।"
+  },
+  {
+    "id": "paracetamol-machupo",
+    "category": "health",
+    "claim_en": "Paracetamol P-500 tablets contain the deadly Machupo virus",
+    "claim_bn": "প্যারাসিটামল পি-৫০০ ট্যাবলেটে প্রাণঘাতী মাচুপো ভাইরাস আছে",
+    "aliases": ["প্যারাসিটামলে মাচুপো ভাইরাস", "p 500 paracetamol machupo virus"],
+    "fact_en": "A years-old hoax. The Machupo virus cannot survive in a dry tablet, and no such contamination has ever been found.",
+    "fact_bn": "বহু বছরের পুরোনো গুজব। শুকনো ট্যাবলেটে মাচুপো ভাইরাস বাঁচতে পারে না, এবং এমন কোনো সংক্রমণ কখনো পাওয়া যায়নি।"
+  },
+  {
+    "id": "cough-cpr",
+    "category": "health",
+    "claim_en": "Coughing hard repeatedly can save your life during a heart attack",
+    "claim_bn": "হার্ট অ্যাটাকের সময় জোরে জোরে কাশি দিলে জীবন বাঁচে",
+    "aliases": ["হার্ট অ্যাটাকে কাশি দিন", "cough cpr heart attack"],
+    "fact_en": "Heart associations say 'cough CPR' is not valid first aid for a heart attack. Call 999 for emergency help immediately.",
+    "fact_bn": "হৃদরোগ বিশেষজ্ঞরা বলেন, 'কাশি দিয়ে সিপিআর' হার্ট অ্যাটাকের সঠিক প্রাথমিক চিকিৎসা নয়। দ্রুত ৯৯৯-এ ফোন করুন।"
+  },
+  {
+    "id": "lemon-cancer",
+    "category": "health",
+    "claim_en": "Hot lemon water cures cancer",
+    "claim_bn": "গরম পানিতে লেবু মিশিয়ে খেলে ক্যানসার ভালো হয়",
+    "aliases": ["লেবু পানিতে ক্যানসার ভালো হয়", "hot lemon kills cancer cells"],
+    "fact_en": "There is no evidence for this. Cancer needs medical treatment; cancer research bodies have debunked this viral message.",
+    "fact_bn": "এর কোনো প্রমাণ নেই। ক্যানসারের জন্য চিকিৎসা প্রয়োজন; ক্যানসার গবেষণা প্রতিষ্ঠানগুলো এই ভাইরাল বার্তা খণ্ডন করেছে।"
+  },
+  {
+    "id": "microwave-cancer",
+    "category": "health",
+    "claim_en": "Food heated in a microwave oven causes cancer",
+    "claim_bn": "মাইক্রোওয়েভ ওভেনে গরম করা খাবার খেলে ক্যানসার হয়",
+    "aliases": ["মাইক্রোওয়েভের খাবারে ক্যানসার", "microwave food causes cancer"],
+    "fact_en": "Microwaves heat food without making it radioactive. There is no evidence microwaved food causes cancer.",
+    "fact_bn": "মাইক্রোওয়েভ খাবার গরম করে, তেজস্ক্রিয় করে না। মাইক্রোওয়েভে গরম করা খাবারে ক্যানসার হয় — এমন প্রমাণ নেই।"
+  },
+  {
+    "id": "fish-milk-vitiligo",
+    "category": "health",
+    "claim_en": "Eating fish and milk together causes white patches on the skin",
+    "claim_bn": "মাছ আর দুধ একসাথে খেলে শরীরে শ্বেতী রোগ হয়",
+    "aliases": ["মাছ দুধ একসাথে খেলে সাদা দাগ", "fish and milk together vitiligo"],
+    "fact_en": "Dermatologists say vitiligo is an autoimmune condition. Food combinations like fish and milk do not cause it.",
+    "fact_bn": "চর্মরোগ বিশেষজ্ঞরা বলেন, শ্বেতী একটি অটোইমিউন রোগ। মাছ ও দুধ একসাথে খাওয়ার মতো খাদ্যাভ্যাস এর কারণ নয়।"
+  },
+  {
+    "id": "plastic-rice",
+    "category": "food",
+    "claim_en": "Plastic rice is being sold in the markets",
+    "claim_bn": "বাজারে প্লাস্টিকের চাল বিক্রি হচ্ছে",
+    "aliases": ["প্লাস্টিকের চাল", "fake plastic rice in market"],
+    "fact_en": "Food-safety tests in several countries found no plastic rice. The viral 'tests' (burning, bouncing) also work on ordinary rice.",
+    "fact_bn": "বিভিন্ন দেশে খাদ্য নিরাপত্তা পরীক্ষায় প্লাস্টিকের চাল পাওয়া যায়নি। ভাইরাল ভিডিওর 'পরীক্ষা' (পোড়ানো, লাফানো) সাধারণ চালেও হয়।"
+  },
+  {
+    "id": "plastic-eggs",
+    "category": "food",
+    "claim_en": "Fake plastic eggs made in China are being sold in the markets",
+    "claim_bn": "বাজারে চীনের তৈরি প্লাস্টিকের নকল ডিম বিক্রি হচ্ছে",
+    "aliases": ["প্লাস্টিকের ডিম", "fake chinese eggs"],
+    "fact_en": "Making an artificial egg would cost more than a real one. Experts say rubbery yolks come from old or badly stored eggs.",
+    "fact_bn": "কৃত্রিম ডিম বানাতে আসল ডিমের চেয়ে বেশি খরচ হবে। বিশেষজ্ঞরা বলেন, রাবারের মতো কুসুম হয় পুরোনো বা ভুলভাবে রাখা ডিমে।"
+  },
+  {
+    "id": "face-on-moon",
+    "category": "rumour-violence",
+    "claim_en": "A religious leader's face was seen on the moon",
+    "claim_bn": "চাঁদে এক ধর্মীয় নেতার মুখ দেখা গেছে",
+    "aliases": ["চাঁদে সাঈদীর ছবি দেখা গেছে", "face seen on the moon"],
+    "fact_en": "The 2013 'face on the moon' images were edited photos. The rumour triggered deadly violence.",
+    "fact_bn": "২০১৩ সালে ছড়ানো 'চাঁদে মুখ' ছবিগুলো ছিল এডিট করা। এই গুজবে প্রাণঘাতী সহিংসতা হয়েছিল।"
+  },
+  {
+    "id": "earthquake-tonight",
+    "category": "disaster",
+    "claim_en": "A massive earthquake will hit Dhaka tonight, everyone stay outside your homes",
+    "claim_bn": "আজ রাতে ঢাকায় ভয়াবহ ভূমিকম্প হবে, সবাই ঘরের বাইরে থাকুন",
+    "aliases": ["আজ রাতে বড় ভূমিকম্প হবে", "big earthquake in dhaka tonight"],
+    "fact_en": "Earthquakes cannot be predicted to a specific date or time. Scientists and the Meteorological Department dismiss such messages.",
+    "fact_bn": "নির্দিষ্ট দিন বা সময় ধরে ভূমিকম্পের পূর্বাভাস দেওয়া সম্ভব নয়। বিজ্ঞানী ও আবহাওয়া অধিদপ্তর এ ধরনের বার্তা নাকচ করে।"
+  },
+  {
+    "id": "tsunami-coxs-bazar",
+    "category": "disaster",
+    "claim_en": "A tsunami will hit Cox's Bazar within 24 hours",
+    "claim_bn": "২৪ ঘণ্টার মধ্যে কক্সবাজারে সুনামি আঘাত হানবে",
+    "aliases": ["কক্সবাজারে সুনামি আসছে", "tsunami coming to coxs bazar"],
+    "fact_en": "Tsunami warnings come only from the Meteorological Department and disaster authorities. Forwarded dated predictions are fake.",
+    "fact_bn": "সুনামির সতর্কবার্তা আসে শুধু আবহাওয়া অধিদপ্তর ও দুর্যোগ কর্তৃপক্ষ থেকে। তারিখ দিয়ে ফরওয়ার্ড করা পূর্বাভাস ভুয়া।"
+  },
+  {
+    "id": "nasa-dark-days",
+    "category": "science",
+    "claim_en": "NASA confirmed the Earth will go completely dark for six days",
+    "claim_bn": "নাসা নিশ্চিত করেছে পৃথিবী ছয় দিন সম্পূর্ণ অন্ধকারে থাকবে",
+    "aliases": ["ছয় দিন অন্ধকার থাকবে পৃথিবী", "earth dark for 6 days nasa"],
+    "fact_en": "NASA has never said this. The hoax has been circulating since 2012.",
+    "fact_bn": "নাসা কখনো এমন কথা বলেনি। ২০১২ সাল থেকে এই গুজব ঘুরছে।"
+  },
+  {
+    "id": "phone-call-explodes",
+    "category": "tech",
+    "claim_en": "Do not answer calls from number 777888999, your phone will explode and kill you",
+    "claim_bn": "৭৭৭৮৮৮৯৯৯ নম্বর থেকে কল এলে ধরবেন না, ফোন বিস্ফোরিত হয়ে মারা যাবেন",
+    "aliases": ["৭৭৭৮৮৮৯৯৯ নম্বরের কল", "777888999 call phone explode"],
+    "fact_en": "A phone cannot explode from receiving a call. This hoax has circulated since the early 2010s.",
+    "fact_bn": "কল রিসিভ করলে ফোন বিস্ফোরিত হতে পারে না। ২০১০-এর দশকের শুরু থেকে এই গুজব ঘুরছে।"
+  },
+  {
+    "id": "taka-1000-ban",
+    "category": "finance",
+    "claim_en": "Bangladesh Bank will ban 1000 taka notes from next month",
+    "claim_bn": "আগামী মাস থেকে ১০০০ টাকার নোট বাতিল করবে বাংলাদেশ ব্যাংক",
+    "aliases": ["১০০০ টাকার নোট বাতিল", "1000 taka note banned"],
+    "fact_en": "Currency changes are announced only through official Bangladesh Bank notices. Check bb.org.bd before believing forwarded messages.",
+    "fact_bn": "মুদ্রা সংক্রান্ত পরিবর্তন শুধু বাংলাদেশ ব্যাংকের অফিশিয়াল নোটিশে ঘোষণা হয়। ফরওয়ার্ড করা বার্তা বিশ্বাস করার আগে bb.org.bd দেখুন।"
+  },
+  {
+    "id": "bank-collapse",
+    "category": "finance",
+    "claim_en": "Your bank is going bankrupt, withdraw all your deposits immediately",
+    "claim_bn": "আপনার ব্যাংক দেউলিয়া হয়ে যাচ্ছে, এখনই সব টাকা তুলে নিন",
+    "aliases": ["ব্যাংক দেউলিয়া টাকা তুলে নিন", "bank bankrupt withdraw money now"],
+    "fact_en": "Panic-withdrawal messages are a known rumour pattern. Check official Bangladesh Bank statements; deposits are insured up to the scheme's limit.",
+    "fact_bn": "আতঙ্ক ছড়িয়ে টাকা তোলানোর বার্তা একটি পরিচিত গুজবের ধরন। বাংলাদেশ ব্যাংকের অফিশিয়াল বিবৃতি দেখুন; নির্দিষ্ট সীমা পর্যন্ত আমানত বিমার আওতায় আছে।"
+  },
+  {
+    "id": "govt-relief-link",
+    "category": "scam",
+    "claim_en": "The government is giving 5000 taka relief to everyone, register through this link",
+    "claim_bn": "সরকার সবাইকে ৫০০০ টাকা ত্রাণ দিচ্ছে, এই লিংকে নিবন্ধন করুন",
+    "aliases": ["সরকারি অনুদান লিংকে নিবন্ধন", "government cash relief register link"],
+    "fact_en": "Government aid is never registered through random forwarded links. These are phishing scams that steal personal and mobile-banking data.",
+    "fact_bn": "সরকারি সহায়তার নিবন্ধন কখনো ফরওয়ার্ড করা লিংকে হয় না। এগুলো ব্যক্তিগত ও মোবাইল ব্যাংকিং তথ্য চুরির ফাঁদ।"
+  },
+  {
+    "id": "free-laptop",
+    "category": "scam",
+    "claim_en": "The government is giving free laptops to all students, apply here",
+    "claim_bn": "সরকার সব শিক্ষার্থীকে বিনামূল্যে ল্যাপটপ দিচ্ছে, এখানে আবেদন করুন",
+    "aliases": ["শিক্ষার্থীদের ফ্রি ল্যাপটপ", "free laptop for students apply"],
+    "fact_en": "No such nationwide scheme exists. These links are phishing scams that collect your personal information.",
+    "fact_bn": "এমন কোনো দেশব্যাপী প্রকল্প নেই। এসব লিংক আপনার ব্যক্তিগত তথ্য হাতিয়ে নেওয়ার ফাঁদ।"
+  },
+  {
+    "id": "free-internet-offer",
+    "category": "scam",
+    "claim_en": "Get 50 GB free internet on the mobile operator's anniversary, click the link",
+    "claim_bn": "মোবাইল অপারেটরের বর্ষপূর্তিতে ৫০ জিবি ফ্রি ইন্টারনেট, লিংকে ক্লিক করুন",
+    "aliases": ["ফ্রি ইন্টারনেট লিংকে ক্লিক", "free internet data anniversary offer"],
+    "fact_en": "Operators announce offers only through their official apps and SMS. These links collect your data or install malware.",
+    "fact_bn": "অপারেটররা অফার ঘোষণা করে শুধু অফিশিয়াল অ্যাপ ও এসএমএসে। এসব লিংক আপনার তথ্য নেয় বা ক্ষতিকর সফটওয়্যার ঢোকায়।"
+  },
+  {
+    "id": "bkash-cashback-share",
+    "category": "scam",
+    "claim_en": "bKash will give 1000 taka cashback if you share this message to 10 groups",
+    "claim_bn": "এই মেসেজ ১০টি গ্রুপে শেয়ার করলে বিকাশ ১০০০ টাকা ক্যাশব্যাক দেবে",
+    "aliases": ["শেয়ার করলে ক্যাশব্যাক", "share message get cashback"],
+    "fact_en": "Mobile financial services never pay you for sharing messages. Never share your PIN or OTP with anyone.",
+    "fact_bn": "মোবাইল আর্থিক সেবা প্রতিষ্ঠান মেসেজ শেয়ারের জন্য টাকা দেয় না। কখনো কাউকে পিন বা ওটিপি দেবেন না।"
+  },
+  {
+    "id": "whatsapp-charge",
+    "category": "scam",
+    "claim_en": "WhatsApp will start charging money, forward this to 10 contacts to keep it free",
+    "claim_bn": "হোয়াটসঅ্যাপ টাকা নেওয়া শুরু করবে, ফ্রি রাখতে ১০ জনকে ফরওয়ার্ড করুন",
+    "aliases": ["হোয়াটসঅ্যাপ টাকা নেবে", "whatsapp will charge forward to keep free"],
+    "fact_en": "A chain-message hoax circulating for years. Forwarding messages does not change your account.",
+    "fact_bn": "বহু বছর ধরে ঘুরতে থাকা চেইন-মেসেজ গুজব। মেসেজ ফরওয়ার্ড করলে আপনার অ্যাকাউন্টে কোনো পরিবর্তন হয় না।"
+  },
+  {
+    "id": "facebook-privacy-notice",
+    "category": "scam",
+    "claim_en": "Facebook will make your private photos public tomorrow unless you post this notice",
+    "claim_bn": "কাল থেকে ফেসবুক আপনার ব্যক্তিগত ছবি পাবলিক করে দেবে, এই নোটিশ পোস্ট করুন",
+    "aliases": ["ফেসবুক ছবি পাবলিক করে দেবে", "facebook will make photos public post this"],
+    "fact_en": "Posting a 'legal notice' has no effect. Privacy is controlled only in your account settings.",
+    "fact_bn": "'আইনি নোটিশ' পোস্ট করলে কিছুই হয় না। গোপনীয়তা নিয়ন্ত্রণ হয় শুধু আপনার অ্যাকাউন্ট সেটিংস থেকে।"
+  },
+  {
+    "id": "lottery-fee",
+    "category": "scam",
+    "claim_en": "You have won 10 lakh taka in a lottery, send a processing fee to claim it",
+    "claim_bn": "আপনি লটারিতে ১০ লাখ টাকা জিতেছেন, টাকা পেতে প্রসেসিং ফি পাঠান",
+    "aliases": ["লটারি জিতেছেন ফি পাঠান", "won lottery pay processing fee"],
+    "fact_en": "A classic advance-fee scam. Real prizes never require you to pay first.",
+    "fact_bn": "এটি অগ্রিম টাকা নেওয়ার পুরোনো প্রতারণা। আসল পুরস্কারের জন্য আগে টাকা দিতে হয় না।"
+  },
+  {
+    "id": "sim-block-link",
+    "category": "scam",
+    "claim_en": "Your SIM will be blocked today, re-register immediately through this link",
+    "claim_bn": "আজই আপনার সিম বন্ধ হয়ে যাবে, এখনই এই লিংকে পুনরায় নিবন্ধন করুন",
+    "aliases": ["সিম বন্ধ হয়ে যাবে নিবন্ধন করুন", "sim will be blocked re register link"],
+    "fact_en": "Operators never ask for SIM re-registration through links. Check with your operator's official helpline.",
+    "fact_bn": "অপারেটর কখনো লিংকের মাধ্যমে সিম পুনঃনিবন্ধন করতে বলে না। অপারেটরের অফিশিয়াল হেল্পলাইনে যোগাযোগ করুন।"
+  },
+  {
+    "id": "exam-question-leak",
+    "category": "education",
+    "claim_en": "SSC and HSC exam questions have been leaked, get them from this Facebook page",
+    "claim_bn": "এসএসসি ও এইচএসসি পরীক্ষার প্রশ্ন ফাঁস, এই পেজ থেকে সংগ্রহ করুন",
+    "aliases": ["প্রশ্ন ফাঁস পেজ", "exam question leak facebook page"],
+    "fact_en": "Such pages are scams that take money and sell fake questions. Education boards have warned against them.",
+    "fact_bn": "এসব পেজ টাকা নিয়ে ভুয়া প্রশ্ন বিক্রি করে প্রতারণা করে। শিক্ষা বোর্ড এ বিষয়ে সতর্ক করেছে।"
+  },
+  {
+    "id": "exam-cancelled-notice",
+    "category": "education",
+    "claim_en": "Official notice: this year's public exams have been cancelled",
+    "claim_bn": "অফিশিয়াল নোটিশ: এ বছরের পাবলিক পরীক্ষা বাতিল করা হয়েছে",
+    "aliases": ["পরীক্ষা বাতিলের নোটিশ", "exams cancelled official notice"],
+    "fact_en": "Fake notices copy official formats. Trust only announcements on education board or ministry websites.",
+    "fact_bn": "ভুয়া নোটিশ অফিশিয়াল নোটিশের মতো করে বানানো হয়। শুধু শিক্ষা বোর্ড বা মন্ত্রণালয়ের ওয়েবসাইটের ঘোষণা বিশ্বাস করুন।"
+  },
+  {
+    "id": "momo-challenge",
+    "category": "tech",
+    "claim_en": "The Momo challenge is pushing children to harm themselves and is spreading in Bangladesh",
+    "claim_bn": "মোমো চ্যালেঞ্জ শিশুদের নিজের ক্ষতি করতে প্ররোচিত করছে, বাংলাদেশে ছড়িয়ে পড়ছে",
+    "aliases": ["মোমো চ্যালেঞ্জ", "momo challenge children"],
+    "fact_en": "Police and child-safety groups in several countries found no evidence of harm; the panic itself spread the frightening images. Talk to children about online safety instead.",
+    "fact_bn": "বিভিন্ন দেশের পুলিশ ও শিশু-সুরক্ষা সংস্থা এর ক্ষতির কোনো প্রমাণ পায়নি; আতঙ্কই ভয়ের ছবিগুলো ছড়িয়েছে। বরং শিশুদের সাথে অনলাইন নিরাপত্তা নিয়ে কথা বলুন।"
+  }
+]

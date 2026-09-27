@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Jachai" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorSecondary">@color/brand_accent</item>
+    </style>
+
+    <!-- Starts on the loading colour so there's no white flash when launched from the share sheet. -->
+    <style name="Theme.Jachai.Verdict" parent="Theme.Jachai">
+        <item name="android:windowBackground">@color/verdict_loading</item>
+    </style>
+</resources>

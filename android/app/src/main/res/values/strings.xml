@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jachai</string>
+    <string name="share_target_label">Check with Jachai</string>
+
+    <!-- Home -->
+    <string name="home_title">যাচাই · Jachai</string>
+    <string name="home_subtitle">Is it real? Share any photo, video or message to Jachai from WhatsApp, Facebook or your Gallery.\nছবি, ভিডিও বা মেসেজ Jachai-তে শেয়ার করে যাচাই করুন।</string>
+    <string name="section_server">Server</string>
+    <string name="server_url_hint">https://your-app.up.railway.app/</string>
+    <string name="btn_save_server">Save &amp; check</string>
+    <string name="server_checking">Checking server…</string>
+    <string name="server_ok">✓ Connected (v%1$s)</string>
+    <string name="server_ok_mock">✓ Connected (v%1$s) · MOCK MODE</string>
+    <string name="server_error_code">Server answered with error %1$d</string>
+    <string name="server_unreachable">✗ Can\'t reach the server. Check the URL and your internet.</string>
+    <string name="server_invalid_url">That doesn\'t look like a valid URL.</string>
+    <string name="section_text">Check a message</string>
+    <string name="claim_hint">Paste a message or claim… / মেসেজ পেস্ট করুন…</string>
+    <string name="btn_check_text">Check text</string>
+    <string name="section_media">Check a photo or video</string>
+    <string name="btn_pick_media">Pick photo or video</string>
+    <string name="toast_enter_text">Paste some text first</string>
+
+    <!-- Verdict screen -->
+    <string name="loading_title_bn">যাচাই করা হচ্ছে…</string>
+    <string name="loading_title_en">Checking…</string>
+    <string-array name="loading_tips">
+        <item>পরিচিত গুজবের সাথে মেলানো হচ্ছে…\nChecking against known hoaxes…</item>
+        <item>এআই-তৈরির লক্ষণ খোঁজা হচ্ছে…\nLooking for signs of AI generation…</item>
+        <item>ছবির খুঁটিনাটি বিশ্লেষণ হচ্ছে…\nAnalysing image details…</item>
+        <item>শেয়ার করার আগে যাচাই করুন\nVerify before you forward</item>
+    </string-array>
+    <string name="confidence_fmt">নিশ্চয়তা · Confidence %1$d%%</string>
+    <string name="matched_claim_fmt">পরিচিত গুজব · Known hoax:\n%1$s\n%2$s</string>
+    <string name="btn_done">Done · ঠিক আছে</string>
+    <string name="btn_retry">Retry · আবার</string>
+    <string name="toast_first_item_only">Checking the first item only</string>
+
+    <string name="fallback_red_bn">সম্ভবত ভুয়া</string>
+    <string name="fallback_red_en">Likely fake</string>
+    <string name="fallback_green_bn">সম্ভবত আসল</string>
+    <string name="fallback_green_en">Likely authentic</string>
+
+    <!-- Errors: first line Bengali, second line English -->
+    <string name="error_title_bn">যাচাই করা যায়নি</string>
+    <string name="error_title_en">Couldn\'t check this</string>
+    <string name="error_no_internet">ইন্টারনেট সংযোগ নেই। সংযোগ দেখে আবার চেষ্টা করুন।\nNo internet connection. Check your connection and try again.</string>
+    <string name="error_timeout">সার্ভার সাড়া দিতে দেরি করছে। আবার চেষ্টা করুন।\nThe server is taking too long. Please try again.</string>
+    <string name="error_server">সার্ভারে সমস্যা হয়েছে। একটু পরে আবার চেষ্টা করুন।\nSomething went wrong on the server. Please try again shortly.</string>
+    <string name="error_unsupported">এই ধরনের ফাইল যাচাই করা যায় না। ছবি, ভিডিও বা লেখা শেয়ার করুন।\nThis file type isn\'t supported. Share a photo, video or text.</string>
+    <string name="error_too_large">ফাইলটি অনেক বড় (সর্বোচ্চ ৫০ MB)।\nThe file is too large (50 MB max).</string>
+    <string name="error_cannot_read">শেয়ার করা ফাইলটি খোলা যায়নি।\nCouldn\'t open the shared file.</string>
+    <string name="error_nothing_shared">কিছু শেয়ার করা হয়নি।\nNothing was shared.</string>
+    <string name="error_expired">যাচাইয়ের মেয়াদ শেষ। আবার শেয়ার করুন।\nThis check expired. Please share again.</string>
+</resources>

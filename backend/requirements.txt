@@ -1,0 +1,10 @@
+# Core: enough to run every endpoint (visual path uses heuristics without the ML extras)
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pillow>=10.4
+numpy>=1.26
+# <5: OpenCV 5 moved the Haar face cascade out of the main package
+opencv-python-headless>=4.10,<5
+rapidfuzz>=3.9
+pytesseract>=0.3.13

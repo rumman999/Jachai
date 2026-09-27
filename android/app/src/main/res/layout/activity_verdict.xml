@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdict_loading">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Loading -->
+        <LinearLayout
+            android:id="@+id/loading_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <ProgressBar
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:indeterminateTint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="@string/loading_title_bn"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading_title_en"
+                android:textColor="@color/on_verdict_secondary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/loading_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:minLines="2"
+                android:textColor="@color/on_verdict_secondary"
+                android:textSize="15sp"
+                tools:text="পরিচিত গুজবের সাথে মেলানো হচ্ছে…\nChecking against known hoaxes…" />
+        </LinearLayout>
+
+        <!-- Result / error -->
+        <LinearLayout
+            android:id="@+id/result_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingStart="28dp"
+                    android:paddingEnd="28dp"
+                    android:paddingTop="48dp"
+                    android:paddingBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/verdict_icon"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:contentDescription="@null"
+                        tools:src="@drawable/ic_verdict_fake" />
+
+                    <TextView
+                        android:id="@+id/verdict_title_bn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        tools:text="সম্ভবত ভুয়া / এআই-তৈরি" />
+
+                    <TextView
+                        android:id="@+id/verdict_title_en"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        tools:text="Likely fake / AI-generated" />
+
+                    <ProgressBar
+                        android:id="@+id/confidence_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="28dp"
+                        android:max="100"
+                        android:progressDrawable="@drawable/confidence_bar"
+                        tools:progress="87" />
+
+                    <TextView
+                        android:id="@+id/confidence_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/on_verdict_secondary"
+                        android:textSize="14sp"
+                        tools:text="নিশ্চয়তা · Confidence 87%" />
+
+                    <TextView
+                        android:id="@+id/explanation_bn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"
+                        tools:text="এই ছবিতে এআই দিয়ে তৈরি বা কারসাজির লক্ষণ পাওয়া গেছে।" />
+
+                    <TextView
+                        android:id="@+id/explanation_en"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/on_verdict_secondary"
+                        android:textSize="15sp"
+                        tools:text="Signs of AI generation or manipulation were found in this image." />
+
+                    <TextView
+                        android:id="@+id/detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/detail_box"
+                        android:padding="12dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_retry"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_retry"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"
+                    app:strokeColor="@android:color/white" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_done"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/white"
+                    android:text="@string/btn_done"
+                    android:textColor="@color/verdict_neutral" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

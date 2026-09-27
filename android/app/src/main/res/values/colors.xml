@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Verdict colour system from the plan: Red #C0392B / Green #1E8449 -->
+    <color name="verdict_red">#C0392B</color>
+    <color name="verdict_green">#1E8449</color>
+    <color name="verdict_loading">#123A56</color>
+    <color name="verdict_neutral">#37474F</color>
+    <color name="on_verdict_secondary">#E6FFFFFF</color>
+
+    <color name="brand">#123A56</color>
+    <color name="brand_accent">#1E8449</color>
+</resources>

@@ -1,0 +1,17 @@
+<!-- Shield + check. Drawn inside the 66dp adaptive-icon safe zone of a 108dp canvas. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,28L76,36L76,54C76,68 66,78 54,82C42,78 32,68 32,54L32,36Z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M44,55L51,62L65,47"
+        android:strokeWidth="5"
+        android:strokeColor="#FF1E8449"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

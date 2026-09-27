@@ -1,0 +1,15 @@
+# Render blueprint. The free plan has 512 MB RAM, which is not enough for torch + the model:
+# ENABLE_ML=false keeps the server on the heuristic scorer. Use a paid plan (or Railway) for the real model.
+services:
+  - type: web
+    name: jachai-api
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ENABLE_ML
+        value: "false"
+      - key: MOCK_MODE
+        value: "false"

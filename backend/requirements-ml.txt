@@ -1,0 +1,5 @@
+# ML extras. Install torch first (CPU wheel):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+transformers>=4.44
+# Optional, only if ENABLE_EMBEDDINGS=1 (adds ~470 MB model):
+# sentence-transformers>=3.0
