@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode: the navy brand colour is unreadable on a dark background, so use a light tint of it. -->
+    <style name="Theme.Jachai" parent="Base.Theme.Jachai">
+        <item name="colorPrimary">#9CC8E8</item>
+        <item name="colorOnPrimary">#0B2233</item>
+        <item name="colorSecondaryContainer">#24455F</item>
+        <item name="colorOnSecondaryContainer">#E3F0FA</item>
+    </style>
+</resources>

@@ -14,9 +14,11 @@ MOCK_MODE = _bool("MOCK_MODE", False)
 
 # Visual pipeline
 ENABLE_ML = _bool("ENABLE_ML", True)
-MODEL_ID = os.getenv("MODEL_ID", "prithivMLmods/Deep-Fake-Detector-v2-Model")
+# Chosen with scripts/compare_models.py on samples/: 9/9 correct (fakes 1.00, real photos ≤ 0.50).
+# The previous default (prithivMLmods/Deep-Fake-Detector-v2-Model) scored real photos as fake.
+MODEL_ID = os.getenv("MODEL_ID", "Ateeqq/ai-vs-human-image-detector")
 FAKE_LABEL = os.getenv("FAKE_LABEL", "")  # force which model label means "fake" if auto-detection guesses wrong
-FAKE_THRESHOLD = float(os.getenv("FAKE_THRESHOLD", "0.5"))
+FAKE_THRESHOLD = float(os.getenv("FAKE_THRESHOLD", "0.75"))
 VIDEO_FRAMES = int(os.getenv("VIDEO_FRAMES", "6"))
 
 # Text / claim pipeline

@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Jachai" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Light mode. Dark mode overrides the colour roles in values-night/themes.xml. -->
+    <style name="Theme.Jachai" parent="Base.Theme.Jachai">
         <item name="colorPrimary">@color/brand</item>
+        <item name="colorOnPrimary">#FFFFFFFF</item>
+        <item name="colorSecondaryContainer">#D6E6F2</item>
+        <item name="colorOnSecondaryContainer">@color/brand</item>
+    </style>
+
+    <style name="Base.Theme.Jachai" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorSecondary">@color/brand_accent</item>
+    </style>
+
+    <!-- Launcher splash: brand colour + shield icon, then hands over to the normal theme. -->
+    <style name="Theme.Jachai.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/brand</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.Jachai</item>
     </style>
 
     <!-- Starts on the loading colour so there's no white flash when launched from the share sheet. -->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_target_label">Jachai দিয়ে যাচাই করুন</string>
+
+    <string name="home_title">যাচাই</string>
+    <string name="home_subtitle">এটা কি সত্যি? হোয়াটসঅ্যাপ, ফেসবুক বা গ্যালারি থেকে যেকোনো ছবি, ভিডিও বা মেসেজ Jachai-তে শেয়ার করে যাচাই করুন।</string>
+    <string name="btn_language">English</string>
+    <string name="section_server">সার্ভার</string>
+    <string name="btn_save_server">সেভ করে পরীক্ষা করুন</string>
+    <string name="server_checking">সার্ভার পরীক্ষা করা হচ্ছে…</string>
+    <string name="server_ok">✓ সংযুক্ত (v%1$s)</string>
+    <string name="server_ok_mock">✓ সংযুক্ত (v%1$s) · মক মোড</string>
+    <string name="server_error_code">সার্ভার ত্রুটি দিয়েছে: %1$d</string>
+    <string name="server_unreachable">✗ সার্ভারে পৌঁছানো যাচ্ছে না। ঠিকানা ও ইন্টারনেট সংযোগ দেখুন।</string>
+    <string name="server_invalid_url">ঠিকানাটি সঠিক নয়।</string>
+    <string name="section_text">মেসেজ যাচাই করুন</string>
+    <string name="claim_hint">মেসেজ বা দাবি পেস্ট করুন…</string>
+    <string name="btn_check_text">লেখা যাচাই করুন</string>
+    <string name="section_media">ছবি বা ভিডিও যাচাই করুন</string>
+    <string name="btn_pick_media">ছবি বা ভিডিও বেছে নিন</string>
+    <string name="toast_enter_text">আগে কিছু লেখা পেস্ট করুন</string>
+    <string name="toast_first_item_only">শুধু প্রথমটি যাচাই করা হচ্ছে</string>
+
+    <string name="section_bubble">ভাসমান বাবল (যে পোস্ট শেয়ার করা যায় না)</string>
+    <string name="bubble_explainer">কিছু পোস্ট শেয়ার করা যায় না। বাবল চালু করুন, পোস্টটি খুলুন, তারপর বাবলে ট্যাপ করে স্ক্রিনে যা আছে তা যাচাই করুন। বন্ধ করতে বাবলে চেপে ধরে রাখুন।</string>
+    <string name="btn_bubble_start">বাবল চালু করুন</string>
+    <string name="btn_bubble_stop">বাবল বন্ধ করুন</string>
+    <string name="toast_overlay_permission">Jachai-কে অন্য অ্যাপের উপরে দেখানোর অনুমতি দিন, তারপর আবার চালু করুন।</string>
+    <string name="toast_bubble_started">বাবল চালু হয়েছে। পোস্টটি খুলে বাবলে ট্যাপ করুন।</string>
+    <string name="toast_bubble_closed">বাবল বন্ধ হয়েছে</string>
+    <string name="toast_capture_failed">স্ক্রিন ক্যাপচার করা যায়নি</string>
+    <string name="bubble_channel">ভাসমান বাবল</string>
+    <string name="bubble_notification_title">Jachai বাবল চালু আছে</string>
+    <string name="bubble_notification_text">স্ক্রিনে যা আছে যাচাই করতে বাবলে ট্যাপ করুন</string>
+    <string name="bubble_stop">বন্ধ করুন</string>
+    <string name="share_result_chooser">ফলাফল শেয়ার করুন</string>
+</resources>

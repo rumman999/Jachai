@@ -1,12 +1,17 @@
 package com.jachai.app;
 
+import android.animation.ObjectAnimator;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
+import android.view.HapticFeedbackConstants;
 import android.view.View;
+import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -50,6 +55,11 @@ public class VerdictActivity extends AppCompatActivity {
     private static final long MAX_WAIT_MS = 25_000;
     private static final long TIP_INTERVAL_MS = 2200;
     private static final long MAX_UPLOAD_BYTES = 50L * 1024 * 1024;
+    // CONFIRM/REJECT are distinct "success"/"warning" patterns on Android 11+; older phones get a plain buzz.
+    private static final int HAPTIC_CONFIRM = Build.VERSION.SDK_INT >= Build.VERSION_CODES.R
+            ? HapticFeedbackConstants.CONFIRM : HapticFeedbackConstants.VIRTUAL_KEY;
+    private static final int HAPTIC_REJECT = Build.VERSION.SDK_INT >= Build.VERSION_CODES.R
+            ? HapticFeedbackConstants.REJECT : HapticFeedbackConstants.LONG_PRESS;
 
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final ExecutorService io = Executors.newSingleThreadExecutor();
@@ -65,7 +75,8 @@ public class VerdictActivity extends AppCompatActivity {
     private TextView loadingTip, titleBn, titleEn, explanationBn, explanationEn, confidenceLabel, detail;
     private ImageView icon;
     private ProgressBar confidenceBar;
-    private MaterialButton retryButton;
+    private MaterialButton retryButton, shareButton;
+    private ApiModels.Result lastResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,9 +98,11 @@ public class VerdictActivity extends AppCompatActivity {
         confidenceLabel = findViewById(R.id.confidence_label);
         detail = findViewById(R.id.detail);
         retryButton = findViewById(R.id.btn_retry);
+        shareButton = findViewById(R.id.btn_share);
 
         findViewById(R.id.btn_done).setOnClickListener(v -> finish());
         retryButton.setOnClickListener(v -> start(getIntent()));
+        shareButton.setOnClickListener(v -> shareResult());
 
         api = ApiClient.get(this);
         start(getIntent());
@@ -237,8 +250,13 @@ public class VerdictActivity extends AppCompatActivity {
         int pct = r.confidence != null ? (int) Math.round(r.confidence * 100) : 0;
         confidenceBar.setVisibility(View.VISIBLE);
         confidenceLabel.setVisibility(View.VISIBLE);
-        confidenceBar.setProgress(pct);
         confidenceLabel.setText(getString(R.string.confidence_fmt, pct));
+        ObjectAnimator.ofInt(confidenceBar, "progress", 0, pct).setDuration(700).start();
+
+        icon.setScaleX(0.3f);
+        icon.setScaleY(0.3f);
+        icon.animate().scaleX(1f).scaleY(1f).setDuration(450).setInterpolator(new OvershootInterpolator(2f)).start();
+        root.performHapticFeedback(red ? HAPTIC_REJECT : HAPTIC_CONFIRM);
 
         if (r.matchedClaim != null) {
             detail.setText(getString(R.string.matched_claim_fmt, r.matchedClaim.claimBn, r.matchedClaim.claimEn));
@@ -246,8 +264,23 @@ public class VerdictActivity extends AppCompatActivity {
         } else {
             detail.setVisibility(View.GONE);
         }
+        lastResult = r;
         retryButton.setVisibility(View.GONE);
+        shareButton.setVisibility(View.VISIBLE);
         showResultGroup();
+    }
+
+    /** Lets the user reply to the rumour in the same chat it came from. */
+    private void shareResult() {
+        ApiModels.Result r = lastResult;
+        if (r == null || r.title == null || r.explanation == null) return;
+        String text = (r.isRed() ? "⚠️ " : "✅ ") + r.title.bn + " · " + r.title.en + "\n\n"
+                + r.explanation.bn + "\n\n" + r.explanation.en + "\n\n" + getString(R.string.share_result_footer);
+        Intent send = new Intent(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_TEXT, text);
+        Intent chooser = Intent.createChooser(send, getString(R.string.share_result_chooser));
+        // Don't offer "Check with Jachai" as a place to share our own verdict.
+        chooser.putExtra(Intent.EXTRA_EXCLUDE_COMPONENTS, new ComponentName[]{new ComponentName(this, VerdictActivity.class)});
+        startActivity(chooser);
     }
 
     private void showError(@StringRes int message) {
@@ -263,6 +296,7 @@ public class VerdictActivity extends AppCompatActivity {
         confidenceLabel.setVisibility(View.GONE);
         detail.setVisibility(View.GONE);
         retryButton.setVisibility(View.VISIBLE);
+        shareButton.setVisibility(View.GONE);
         showResultGroup();
     }
 
