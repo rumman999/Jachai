@@ -2,6 +2,10 @@
 build/
 app/build/
 local.properties
+# Release signing key: keep out of git, back it up somewhere safe
+keystore.properties
+*.jks
+*.keystore
 .idea/
 *.iml
 captures/

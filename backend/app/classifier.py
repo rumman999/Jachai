@@ -43,9 +43,9 @@ def load() -> Optional[object]:
 
             _pipe = pipeline("image-classification", model=config.MODEL_ID, device=-1)
             _state["labels"] = list(_pipe.model.config.id2label.values())
-            _state["status"] = "ready"
+            _state["status"] = "warming"  # usable, but the first few inferences on a fresh container are slow
             _state["load_seconds"] = round(time.perf_counter() - started, 1)
-            log.info("model %s ready in %.1fs, labels=%s", config.MODEL_ID, _state["load_seconds"], _state["labels"])
+            log.info("model %s loaded in %.1fs, labels=%s", config.MODEL_ID, _state["load_seconds"], _state["labels"])
         except Exception as exc:
             _state["status"], _state["error"] = "unavailable", repr(exc)
             log.warning("model unavailable, using heuristics: %r", exc)
@@ -58,10 +58,26 @@ def load_in_background():
 
 
 def _warm_up():
-    if load() is not None:
-        from PIL import Image
+    """On a fresh Railway container the first several inferences take 8 s+ (measured), which trips the job timeout.
+    Burn through them here, with the same shapes real requests use, before /health reports "ready"."""
+    if load() is None:
+        return
+    import numpy as np
+    from PIL import Image
 
-        fake_probabilities([Image.new("RGB", (224, 224), (128, 128, 128))])  # first inference is always slow
+    rng = np.random.default_rng(0)
+    photo = Image.fromarray(rng.integers(0, 255, (768, 1024, 3), dtype=np.uint8))
+    face = photo.crop((300, 200, 600, 500))
+    started = time.perf_counter()
+    for batch in ([photo], [photo, face], [photo, face], [photo] * 6):  # single image, image+face, video frames
+        try:
+            fake_probabilities(batch)
+        except Exception as exc:
+            log.warning("warm-up inference failed: %r", exc)
+            break
+    _state["warmup_seconds"] = round(time.perf_counter() - started, 1)
+    _state["status"] = "ready"
+    log.info("model warm in %.1fs", _state["warmup_seconds"])
 
 
 def _fake_score(predictions: list[dict]) -> float:

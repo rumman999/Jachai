@@ -4,3 +4,5 @@ __pycache__/
 .pytest_cache/
 .env
 .hf-cache/
+# Shareable APKs are published as release files, not committed
+dist/

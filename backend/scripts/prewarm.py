@@ -21,7 +21,7 @@ def main():
     base = args.url.rstrip("/")
     sys.stdout.reconfigure(encoding="utf-8")
 
-    deadline = time.time() + 180
+    deadline = time.time() + 300  # a fresh container needs ~1 min to load + warm the model
     while True:
         try:
             health = _request(f"{base}/health")
@@ -32,7 +32,7 @@ def main():
         except Exception as exc:
             print(f"waiting for server… ({exc.__class__.__name__})")
             if time.time() > deadline:
-                sys.exit("server did not come up in 3 minutes: check Railway")
+                sys.exit("server did not come up in 5 minutes: check Railway")
         time.sleep(3)
     if visual != "ready":
         print(f"WARNING: visual model is '{visual}' - photo verdicts will use the heuristic fallback")
@@ -45,8 +45,12 @@ def main():
     print(f"text path: {r['verdict']} {r['label']} in {time.time() - started:.1f}s")
 
     if args.image:
-        r = verify(base, args.image)
-        print(f"media path: {r['verdict']} {r['label']} engine={r['engine']} in {r['wall_s']}s")
+        # Three passes: the server may still be slow on its first real images even after warm-up.
+        for attempt in range(1, 4):
+            r = verify(base, args.image)
+            print(f"media path #{attempt}: {r['verdict']} {r['label']} engine={r['engine']} in {r['wall_s']}s")
+        if r["engine"] != "model" and visual == "ready":
+            print("WARNING: last media check didn't use the model; run this script again before going on stage")
     print("warm. Keep the app open on the phone and go.")
 
 
